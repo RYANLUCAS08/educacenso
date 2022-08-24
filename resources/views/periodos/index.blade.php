@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<a href="periodos/add">Novo</a>
+<a href="/periodos/add">Novo</a>
     <table>
         <tr>
             <th>Ano</th>
@@ -31,4 +31,3 @@
     
 </body>
 </html> 
-<!-- //(periodo_id, id, nome_aluno, turma_id, cpf, cidade, cidade_id, uf, uf_id, transporte, poder_publico_responsavel, diferenca_paga) -->

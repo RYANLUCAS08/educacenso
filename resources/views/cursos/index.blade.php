@@ -8,22 +8,20 @@
 </head>
 <body>
 
-<a href="periodos/add">Novo</a>
+<a href="/cursos/add">Novo</a>
     <table>
         <tr>
-            <th>Ano</th>
-            <th>Início</th>
-            <th>Fim</th>
-            <th>Ações</th>
+            <th>nome</th>
+            <th>nome_reduzido</th>
+            
         </tr>
 
-        @foreach ($periodos as $periodo)
+        @foreach ($cursos as $curso)
         <tr>
-            <td>{{ $periodo->ano }}</td>
-            <td>{{ $periodo->dt_inicio }}</td>
-            <td>{{ $periodo->dt_fim }}</td>
-            <td><a href="/periodos/{{ $periodo->id }}/destroy">Remover</a></td>
-            <td><a href="/periodos/{{ $periodo->id }}/edit">Alterar</a></td>
+            <td>{{ $curso->nome }}</td>
+            <td>{{ $curso->nome_reduzido }}</td>
+            <td><a href="/cursos/{{ $curso->id }}/destroy">Remover</a></td>
+            <td><a href="/cursos/{{ $curso->id }}/edit">Alterar</a></td>
         </tr>
         @endforeach
         
@@ -31,4 +29,5 @@
     
 </body>
 </html> 
-<!-- //(periodo_id, id, nome_aluno, turma_id, cpf, cidade, cidade_id, uf, uf_id, transporte, poder_publico_responsavel, diferenca_paga) -->
+
+
